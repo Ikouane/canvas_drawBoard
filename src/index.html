@@ -1,0 +1,63 @@
+<!--
+ * @Author: ikouane
+ * @Date: 2022-07-19 13:29:17
+ * @LastEditTime: 2022-07-19 17:47:27
+ * @LastEditors: ikouane
+ * @Description: Canvas 画板
+ * @version: 
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas 画板</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div class="tools__wrapper" style="--pickedColor: #000000">
+    <ul class="color-picker__wrapper">
+    </ul>
+
+    <ul class="weight-picker__wrapper">
+      <li class="weight-picker__item" data-size="1">S</li>
+      <li class="weight-picker__item active" data-size="2">M</li>
+      <li class="weight-picker__item" data-size="3">L</li>
+    </ul>
+
+    <ul class="tools show">
+      <!-- 颜色选择 -->
+      <li class="tools__item pick-color"></li>
+      <!-- 粗细选择 -->
+      <li class="tools__item pick-weight">
+        <i class="ri-bold"></i>
+      </li>
+      <!-- 画笔工具 -->
+      <li class="tools__item pencil active">
+        <i class="ri-pencil-line"></i>
+      </li>
+      <!-- 橡皮擦 -->
+      <li class="tools__item eraser">
+        <i class="ri-eraser-line"></i>
+      </li>
+      <!-- 清屏 -->
+      <li class="tools__item clear">
+        <i class="ri-delete-bin-line"></i>
+      </li>
+      <!-- 图片下载 -->
+      <li class="tools__item save">
+        <i class="ri-download-2-line"></i>
+      </li>
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
